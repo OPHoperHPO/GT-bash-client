@@ -1,7 +1,7 @@
 #! /bin/bash
 ### Console Google Translate 
 ### Example usage:
-### gttranslate <source_lng> <new_lng> <your text>
+### translate.sh <source_lng> <new_lng> <your text>
 ### This bash script is combine of this scripts https://gist.github.com/elFua/3342075 and https://gist.github.com/ayubmalik/149e2c7f28104f61cc1c862fe9834793
 ### Updated by Anodev https://github.com/OPHoperHPO/
 
