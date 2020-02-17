@@ -8,7 +8,7 @@
 USAGE="
 Example usage: '$0 <source_lng> <new_lng> <your text>'
 Usage: '$0 en ru text'
-Some language codes: en|fr|de|ru|nl|it|es|ja|la|pl|bo|ru
+Some language codes: en|fr|de|ru|nl|it|es|ja|la|pl|bo|ru|auto
 All language codes:
 https://cloud.google.com/translate/docs/languages"
 
