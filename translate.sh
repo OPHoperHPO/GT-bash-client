@@ -19,7 +19,7 @@ then
         echo -e "To run this script, you need install 'curl'"
         echo -e "To install curl run this command: 
         'sudo pacman -S curl' # For Arch Linux based distro
-        'sudo yum install curl' # For Fedora/Red Hat Enterprise Linux etc
+        'sudo dnf install curl' # For Fedora/Red Hat Enterprise Linux etc
         'sudo apt install curl' #For Debian-based distro like Ubuntu, Debian, etc "
         exit 1
 fi
