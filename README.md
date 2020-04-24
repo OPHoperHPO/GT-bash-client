@@ -14,5 +14,4 @@ They **aren't** work!
 If you do not know the source language, then put the value `auto` in place of `<source_lng> `
 ### Install
 - Clone repository via `git clone https://github.com/OPHoperHPO/GT-bash-client`
-- Set permission via `chmod +x ./GT-bash-client/translate.sh `
 - Check script via `./GT-bash-client/translate.sh en es Hello`
