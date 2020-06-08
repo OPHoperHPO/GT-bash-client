@@ -58,5 +58,4 @@ url="https://translate.googleapis.com/translate_a/single?client=gtx&sl=${FROM_LN
 # Send encoded text and language to google translate api
 response=$(curl --tr-encoding  -sA "${ua}" "${url}")
 # Print only first translation from JSON
-translated=$(echo "${response}" | sed 's/","/\n/g' | sed -E 's/\[|\]|"//g' | head -1)
-echo "$translated"
+echo "${response}" | jq -cr '.[0] | map(.[0]) | join(" ")'
