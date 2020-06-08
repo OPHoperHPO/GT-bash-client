@@ -57,5 +57,7 @@ ua='Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) C
 url="https://translate.googleapis.com/translate_a/single?client=gtx&sl=${FROM_LNG}&tl=${TO_LNG}&dt=t&q=${qry}" # Google Translate url
 # Send encoded text and language to google translate api
 response=$(curl --tr-encoding  -sA "${ua}" "${url}")
-# Print only first translation from JSON
+# The first element in response contains arrays that contain the full
+# translation in first element and and the sentences that were translated
+# in the second element. Here we get the first elements and join with a space.
 echo "${response}" | jq -cr '.[0] | map(.[0]) | join(" ")'
