@@ -49,19 +49,6 @@ PRUNE=0
 NO_HEAD=0
 NORMALIZE_SOLIDUS=0
 
-usage() {
-  echo
-  echo "Usage: JSON.sh [-b] [-l] [-p] [-s] [-h]"
-  echo
-  echo "-p - Prune empty. Exclude fields with empty values."
-  echo "-l - Leaf only. Only show leaf nodes, which stops data duplication."
-  echo "-b - Brief. Combines 'Leaf only' and 'Prune empty' options."
-  echo "-n - No-head. Do not show nodes that have no path (lines that start with [])."
-  echo "-s - Remove escaping of the solidus symbol (straight slash)."
-  echo "-h - This help text."
-  echo
-}
-
 awk_egrep () {
   local pattern_string=$1
 
